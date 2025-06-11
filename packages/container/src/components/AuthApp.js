@@ -1,4 +1,4 @@
-import { mount } from "marketing/MarketingApp";
+import { mount } from "auth/AuthApp";
 import React, { useRef, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
@@ -20,5 +20,5 @@ export default () => {
     history.listen(onParentNavigate);
   }, []);
 
-  return <div ref={ref} />; // This is the div that will be used to mount the MarketingApp
+  return <div ref={ref} />; // This is the div that will be used to mount the AuthApp
 };
